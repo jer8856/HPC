@@ -1,2 +1,9 @@
+Distributed Image Processing using MPI
+
+This implementation reads a .txt file which have the paths of the images to process.
+The code is written for Gaussian filter bluring, the code uses a variable r which is the
+radious of the filter, while higher r is higher is the factor of bluring.
+
 compile: make 
-usage: mpirun <-np #cores if needed> <r> <file with name of images>
+usage: mpirun -np <#cores> dip.x <r> <file with name of images>
+       mpirun -np 4 dip.x 0.5 imgs.txt
