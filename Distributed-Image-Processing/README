@@ -1,1 +1,2 @@
-
+compile: make 
+usage: mpirun <-np #cores if needed> <r> <file with name of images>
