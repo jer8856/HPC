@@ -1,0 +1,5 @@
+compile: g++ -fopenmp trap.c++ -o trap
+usage: ./trap
+
+notes: you can set the number of threads by exporting NUM_THREADS in your terminal
+      export OMP_NUM_THREADS=<n_threads>
